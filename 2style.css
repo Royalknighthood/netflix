@@ -1,0 +1,88 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 295;
+    height: 500px;
+    background: #121212;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
+    overflow:hidden;
+}
+.bg-img{
+    position: absolute;
+    top: -60px;
+    width: 100%;
+    height: 300px;
+    background: url("image\ 2.png") center/cover;
+}
+.container::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to top, #121212 65%, transparent);
+}
+ .content{
+    position: relative; 
+    bottom: 0;
+    z-index: 3;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'popins' sans-serif;
+}
+form{
+    width: 270px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+form input, button {
+    border: none;
+    height: 40px ;
+    outline: none;
+    border-radius: 2px;
+}
+form input{
+    width: 260px;
+    margin: 10px 0;
+    background: #333333;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+form input::placeholder{
+    font-family: 'popins' sans-serif;
+}
+form button{
+    background: #e50914;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'popins' sans-serif;
+    margin: 10px 30px;
+}
+.content p{
+    width: 200px;
+    color: #737373;
+    font-size: 17px;
+}
+.content p a{
+    text-decoration: none;
+    color: #fff;
+}
